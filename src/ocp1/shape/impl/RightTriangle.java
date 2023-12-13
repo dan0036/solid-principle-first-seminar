@@ -24,4 +24,9 @@ public class RightTriangle implements Shape {
     public double getHypotenuse() {
         return hypotenuse;
     }
+
+    @Override
+    public double getArea() {
+        return 0.5 * leg1 * leg2;
+    }
 }

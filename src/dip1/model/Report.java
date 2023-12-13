@@ -9,14 +9,11 @@ public class Report{
     private List<ReportItem> items;	// report data
 
     // calculate report data
-    public void calculate(){
+    public List<ReportItem> calculate(){
         items =  new ArrayList<ReportItem>();
         items.add(new ReportItem("First", (float)5));
         items.add(new ReportItem("Second", (float)6));
+        return items;
     }
 
-    public void output(){
-        ReportPrinter reportPrint = new ReportPrinter();
-        reportPrint.output(items);
-    }
 }

@@ -1,6 +1,1 @@
-{
-"clientName":"qw",
-"product":"wq",
-"qnt":23,
-"price":5
-}
+{"clientName":'Anton', "product:'Pizza', quantity:1, price:23}
