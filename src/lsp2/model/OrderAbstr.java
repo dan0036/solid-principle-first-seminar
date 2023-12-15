@@ -1,12 +1,20 @@
 package lsp2.model;
 
-public class Order {
-    private final int price;
-    private final int quantity;
+public abstract class OrderAbstr {
+    protected final int price;
+    protected final int quantity;
 
-    public Order(int quantity, int price) {
+    public OrderAbstr(int price, int quantity) {
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public int getAmount() {

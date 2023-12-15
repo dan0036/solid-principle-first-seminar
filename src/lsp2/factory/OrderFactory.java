@@ -1,13 +1,16 @@
 package lsp2.factory;
 
-import lsp2.model.Order;
+import lsp2.model.OrderAbstr;
 import lsp2.model.OrderBonus;
+import lsp2.model.OrderPlain;
+import srp2.model.Order;
 
 public class OrderFactory {
-    public Order create(int quantity, int price, boolean isBonus) {
-        if (isBonus) {
-            return new OrderBonus(quantity, price);
-        }
-        return new Order(quantity, price);
+    public OrderAbstr createOrderPlain(int price, int quantity) {
+        return new OrderPlain(quantity, price);
     }
+    public OrderAbstr createOrderBonus(int price, int quantity) {
+        return new OrderBonus(price, quantity);
+    }
+
 }

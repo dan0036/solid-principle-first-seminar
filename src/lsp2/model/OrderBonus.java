@@ -1,13 +1,8 @@
 package lsp2.model;
 
-public class OrderBonus extends Order{
+public class OrderBonus extends OrderAbstr {
 
-    public OrderBonus(int quantity, int price) {
-        super(quantity, price);
-    }
-
-    @Override
-    public int getAmount() {
-        return 0;
+    public OrderBonus(int price, int quantity) {
+        super(price, quantity);
     }
 }

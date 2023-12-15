@@ -17,6 +17,9 @@ public class Order {
         this.price = price;
     }
 
+    public Order(int quantity, int price) {
+    }
+
     public String getClientName() {
         return clientName;
     }

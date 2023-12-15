@@ -1,5 +1,9 @@
 package homework;
 
+import homework.Model.Persister;
+import homework.Model.User;
+import homework.impl.UserReport;
+
 public class Main{
     public static void main(String[] args){
         User user = new User("Bob");
